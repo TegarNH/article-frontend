@@ -21,6 +21,13 @@ export async function createArticle(articleData) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(articleData),
   });
+  
+  if (!response.ok) {
+    const errorData = await response.json();
+    const errorMessage = Array.isArray(errorData.errors) ? errorData.errors.join(', ') : 'Failed to create article';
+    throw new Error(errorMessage);
+  }
+
   return await response.json();
 }
 
@@ -31,6 +38,13 @@ export async function updateArticle(id, articleData) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(articleData),
   });
+  
+  if (!response.ok) {
+    const errorData = await response.json();
+    const errorMessage = Array.isArray(errorData.errors) ? errorData.errors.join(', ') : 'Failed to update article';
+    throw new Error(errorMessage);
+  }
+
   return await response.json();
 }
 
