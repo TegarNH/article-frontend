@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/public/pages/all_posts.html"
+    }
+  ]
+}
