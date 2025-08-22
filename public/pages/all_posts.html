@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharing Vision</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="/">Dashboard</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" href="/">All Posts</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/add-new">Add New</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/preview">Preview</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="mb-4">All Posts</h1>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="published-tab" data-bs-toggle="tab" data-bs-target="#published" type="button" role="tab" aria-controls="published" aria-selected="true">Published</button>
+            </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link" id="drafts-tab" data-bs-toggle="tab" data-bs-target="#drafts" type="button" role="tab" aria-controls="drafts" aria-selected="false">Drafts</button>
+            </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link" id="trashed-tab" data-bs-toggle="tab" data-bs-target="#trashed" type="button" role="tab" aria-controls="trashed" aria-selected="false">Trashed</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="published" role="tabpanel" aria-labelledby="published-tab">
+            <table class="table table-striped mt-3">
+                <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody id="published-table-body"></tbody>
+            </table>
+            </div>
+            <div class="tab-pane fade" id="drafts" role="tabpanel" aria-labelledby="drafts-tab">
+            <table class="table table-striped mt-3">
+                <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody id="drafts-table-body"></tbody>
+            </table>
+            </div>
+            <div class="tab-pane fade" id="trashed" role="tabpanel" aria-labelledby="trashed-tab">
+            <table class="table table-striped mt-3">
+                <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody id="trashed-table-body"></tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/utils.js"></script>
+    <script type="module" src="/js/all_posts.js"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,26 @@
+{
+  "name": "article-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TegarNH/article-frontend.git"
+  },
+  "keywords": [],
+  "author": "Tegar Naufal Hanip",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TegarNH/article-frontend/issues"
+  },
+  "homepage": "https://github.com/TegarNH/article-frontend#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "express": "^5.1.0"
+  }
+}
