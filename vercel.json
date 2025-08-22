@@ -1,8 +1,7 @@
 {
   "rewrites": [
-    {
-      "source": "/",
-      "destination": "/public/pages/all_posts.html"
-    }
+    { "source": "/add-new", "destination": "/public/pages/add_new.html" },
+    { "source": "/preview", "destination": "/public/pages/preview.html" },
+    { "source": "/", "destination": "/public/pages/all_posts.html" }
   ]
 }
